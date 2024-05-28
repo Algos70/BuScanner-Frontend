@@ -2,11 +2,10 @@ import "./Carousel.css";
 import { Container } from "react-bootstrap";
 
 function Carousel() {
-
   const handleClick = () => {
     window.location.href = "/provinces";
   };
-  
+
   return (
     <Container className="carousel-container">
       <div className="left-carousel">
@@ -23,13 +22,15 @@ function Carousel() {
             </p>
           </div>
 
-          <button onClick={handleClick} className="carousel-btn">Learn More</button>
+          <button onClick={handleClick} className="carousel-btn">
+            Learn More
+          </button>
         </div>
       </div>
       <div className="right-carousel">
         <img
           className="carousel-img"
-          src="/src/assets/beachMan.jpg"
+          src="https://i.imgur.com/2PWBtib.jpeg"
           alt="beachMan"
         />
       </div>
