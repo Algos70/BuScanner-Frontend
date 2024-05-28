@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Follows.css";
+import { useParams } from "react-router-dom";
 import PageLayout from "../LayoutComponent/Layout";
 import { Button, Form } from "react-bootstrap";
 import CustomModal from "../../Components/Modal/CustomModal";
@@ -13,6 +14,7 @@ import { notify } from "../../Utils/Utils";
 import FollowCard from "../../Components/FollowCard/FollowCard";
 
 function Follows() {
+  const { userEmail } = useParams<{ userEmail: string }>();
   const user: UserInterface = JSON.parse(localStorage.getItem("userInfo")!);
   const [showModal, setShowModal] = useState<boolean>(false);
   const [followForm, setFollowForm] = useState<FollowModel>({
