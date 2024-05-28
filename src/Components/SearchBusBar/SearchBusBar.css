@@ -1,0 +1,31 @@
+.SearchBusBar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.App_SearchBox{
+    height: 3.5rem;
+    width: 90%;
+    background-color: #0772E4;
+    display: flex;
+    justify-content: center;
+  
+  }
+  .App_SearchBoxContainer{
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  .destination-container {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+  }

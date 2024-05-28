@@ -1,0 +1,52 @@
+.nav-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .login-container {
+    background-color: #05203c;
+    height: 15rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+  }
+  .login-text {
+    text-decoration: none;
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+  }
+  .loginForm-container {
+    margin-top: 3.5rem;
+  }
+  
+  .loginForm {
+    max-width: 30rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .loginForm label {
+    color: #524c61;
+    font-weight: bold;
+  }
+  .loginForm a {
+    text-decoration: none;
+    color: #36b3a8;
+    font-weight: bold;
+  }
+  .loginbtn {
+    background-color: #36b3a8;
+    width: 100%;
+    height: 2.5rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+  }
+  
+  .loginbtn:hover {
+    background-color: #2e8b7e;
+  }

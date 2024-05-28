@@ -1,0 +1,142 @@
+.ticket-container {
+  width: 100%;
+  height: 11rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  border-radius: 0.5rem;
+}
+
+.first-card {
+  border: 3px solid #0772E4 !important;
+}
+
+.vr {
+  color: gray;
+  width: 2px;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 6;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.left-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+.company-logo {
+  width: 7rem;
+  height: auto;
+}
+
+.company-logo:hover {
+  cursor: pointer;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.start-time,
+.end-time {
+  font-weight: bolder;
+}
+
+.total-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  width: 100%;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  width: 100%;
+  /* Set the hr color */
+  color: #020101; /* old IE */
+  background-color: #020101; /* Modern Browsers */
+}
+
+.right {
+  display: flex;
+  color: black;
+  flex: 4;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  width: 75%;
+}
+
+.right-content {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.select-button {
+  background-color: #36b3a8;
+  color: white;
+  border: none;
+  width: 100%;
+  height: 2.5rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+}
+
+.dropdown-container {
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  height: 1px;
+}
+
+.fav-options-dropdown > button {
+  background-color: transparent !important;
+  border: none !important;
+  color: black; /* Retain the text color */
+  box-shadow: none; /* Remove the default shadow */
+  padding: 0 !important;
+}
+
+
+.fav-options-dropdown > button:hover {
+    background-color: #EFF1F2 !important;
+    color: black !important; /* Retain the text color */
+  }
+
+.fav-options-dropdown .dropdown-toggle::after {
+  display: none; /* Optional: Remove the default dropdown arrow */
+}

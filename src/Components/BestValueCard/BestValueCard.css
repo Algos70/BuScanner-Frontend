@@ -1,0 +1,15 @@
+.value-card h6 {
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.value-card {
+    border-radius: 0.5rem; 
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
+    background-color: #fff; 
+    transition: box-shadow 0.3s ease; 
+    justify-content: end;
+    color: white;
+    width: 32.5%;
+    padding-bottom: 1rem;
+}

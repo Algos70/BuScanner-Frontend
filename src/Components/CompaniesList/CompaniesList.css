@@ -1,0 +1,11 @@
+.companies-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1; /* This makes the main content take up the remaining space */
+}
+
+.companies-card-container {
+  max-width: 65%;
+  margin-top: 5rem;
+}

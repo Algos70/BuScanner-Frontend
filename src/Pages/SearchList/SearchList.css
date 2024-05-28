@@ -1,0 +1,14 @@
+.search-list {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.search-list-nav {
+  flex: 1; /* This makes the main content take up the remaining space */
+}
+
+.main-footer {
+  padding: 1rem 0;
+  text-align: center;
+}

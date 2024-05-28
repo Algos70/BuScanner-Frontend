@@ -1,0 +1,21 @@
+.no-caret .dropdown-toggle::after {
+  border: none; /* Remove the border that creates the caret */
+  content: none; /* Remove the content to hide the pseudo-element */
+}
+
+.no-caret {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.user-avatar-container {
+  border-radius: 50%;
+  width: 3.5rem !important;
+  height: 3.5rem !important;
+  border: 1px groove #36b3a8;
+}
+
+.avatar-collapse {
+  width: 3rem !important;
+  height: 3rem !important;
+}

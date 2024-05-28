@@ -1,0 +1,83 @@
+.content-company-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+
+}
+
+.content-company-review, .content-company-info  {
+    background-color: white;
+    margin-top: 2rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: auto;
+}
+
+.content-company-review {
+    height: 100%;
+    margin-left: 3rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+
+}
+
+.content-company-info {
+    border-left: 2px dotted #cfcdcd;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-right: 3rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+}
+
+.review-list{
+    flex: 1;
+    max-height: 45rem;
+    overflow-y: auto; 
+}
+
+.company-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.review-modal-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 2rem;
+    height: 100%;
+    width: 100%;
+
+}
+
+.review-modal-container > .form-floating {
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+
+
+.review-textarea {
+    width: 100% !important;
+    height: 20rem !important;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    resize: none;
+}

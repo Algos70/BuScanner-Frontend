@@ -1,0 +1,29 @@
+.custom-select {
+    background: transparent;
+    border: none;
+    outline: none; 
+    color: white; /* Set text color for the select element */
+    font-size: inherit;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.custom-select option {
+    color: rgb(7, 114, 228);
+    background: white; /* Ensure option background is visible in the dropdown */
+}
+
+.custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-select::after {
+    content: '▼'; 
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}

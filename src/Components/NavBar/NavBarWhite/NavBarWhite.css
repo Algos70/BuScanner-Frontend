@@ -1,0 +1,39 @@
+.navbar-white {
+  height: 8rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow below the div */
+}
+
+.navwhiteContainer {
+  width: 100%;
+  max-width: 65%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-w-text{
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #0772E4;
+  text-decoration: none;
+}
+
+.navWhiteButton {
+  margin-left: 1.25rem;
+  border: 1px solid #0772E4; 
+  border-radius: 0.5rem; 
+  padding: 0.3rem 1.6rem;
+  cursor: pointer;
+  color: #0772E4; 
+  background-color: transparent; 
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.navWhiteButton:hover {
+  background-color: #05203c; 
+  color: #ffffff; 
+  border-color: #05203c; 
+}

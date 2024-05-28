@@ -1,0 +1,42 @@
+.content-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.filter-and-tickets {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    max-width: 100%;
+}
+
+.align-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 70%;
+    margin-left: auto;
+}
+
+.filters {
+    flex: 2;
+}
+
+.company-name-filter {
+    background-color: white;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.ticketsInfo {
+    flex: 8;
+}
+
+.no-tickets {
+    text-align: center;
+}

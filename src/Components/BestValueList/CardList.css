@@ -1,0 +1,13 @@
+.App_Best_Cheapest_Card {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.App_Best_Cheapest_CardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}

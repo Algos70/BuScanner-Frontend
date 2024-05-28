@@ -1,0 +1,14 @@
+.companies {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  align-items: center;
+}
+
+.companies-list-container {
+    background-color: white;
+    width: 60%;
+    height: auto;
+    margin-top: 3rem;
+}

@@ -1,0 +1,10 @@
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #eff1f2;
+}
+
+.page-layout-content {
+  flex: 1;
+}
