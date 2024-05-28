@@ -36,60 +36,52 @@ function SearchListContent(props: SearchListContentProps) {
   const [companies, setCompanies] = useState<CompanyModel[]>([]);
 
   const constructTickets = (values: TripsModelKamilKoc[]) => {
-    const filteredValues = values.filter(
-      (ticket) =>
-        props.selectedCompanies.length === 0 ||
-        props.selectedCompanies.includes(ticket.busBrandName)
+    const filteredValues = values.filter((ticket) =>
+      props.selectedCompanies.length === 0 || props.selectedCompanies.includes(ticket.busBrandName)
     );
 
-    return filteredValues.length !== 0 ? (
-      filteredValues.map((ticket: TripsModelKamilKoc, index) => (
-        <Ticket
-          key={index}
-          start={formatTime(ticket.departureTime)}
-          end={formatTime(ticket.arrivalTime)}
-          price={Number(ticket.pricePerPerson)}
-          imageLink={ticket.busBrandLogoUrl}
-          purchaseLink={ticket.purchaseLink}
-          formData={props.formData}
-          busBrandName={ticket.busBrandName}
-          className={index === 0 ? "first-card" : ""}
-        />
-      ))
+    return filteredValues.length !== 0 ? ( filteredValues.map((ticket: TripsModelKamilKoc, index) => (
+      <Ticket
+        key={index}
+        start={formatTime(ticket.departureTime)}
+        end={formatTime(ticket.arrivalTime)}
+        price={Number(ticket.pricePerPerson)}
+        imageLink={ticket.busBrandLogoUrl}
+        purchaseLink={ticket.purchaseLink}
+        formData={props.formData}
+        busBrandName={ticket.busBrandName}
+        className={index === 0 ? "first-card" : ""}
+      />
+    ))
     ) : (
       <div className="no-tickets">
-        No tickets available for {props.formData.from} to {props.formData.to} at{" "}
-        {props.formData.date}
+        No tickets available for {props.formData.from} to {props.formData.to} at {props.formData.date}
       </div>
     );
   };
 
   useEffect(() => {
-    getAllProvinceNames()
-      .then((response) => {
-        setAllProvinceNames(response.data);
-        if (props.trips.length === 0 || props.trips === null) return;
-        setCardValues([
-          {
-            value: findCheapestTrip(props.trips)!.pricePerPerson,
-            header: "Cheapest",
-            time: findCheapestTrip(props.trips)!.hours,
-          },
-          {
-            value: findBestTimePriceRatioTrip(props.trips)!.pricePerPerson,
-            header: "Best",
-            time: findBestTimePriceRatioTrip(props.trips)!.hours,
-          },
-          {
-            value: findFastestTrip(props.trips)!.pricePerPerson,
-            header: "Fastest",
-            time: findFastestTrip(props.trips)!.hours,
-          },
-        ]);
-      })
-      .finally(() => {
-        props.setIsLoading(false);
-      });
+    getAllProvinceNames().then((response) => {
+      setAllProvinceNames(response.data);
+      if (props.trips.length === 0 || props.trips === null) return;
+      setCardValues([
+        {
+          value: findCheapestTrip(props.trips)!.pricePerPerson,
+          header: "Cheapest",
+          time: findCheapestTrip(props.trips)!.hours,
+        },
+        {
+          value: findBestTimePriceRatioTrip(props.trips)!.pricePerPerson,
+          header: "Best",
+          time: findBestTimePriceRatioTrip(props.trips)!.hours,
+        },
+        {
+          value: findFastestTrip(props.trips)!.pricePerPerson,
+          header: "Fastest",
+          time: findFastestTrip(props.trips)!.hours,
+        },
+      ]);
+    });
     getAllBusCompanies().then((response) => {
       setCompanies(response.data);
       const names = response.data.map((company: CompanyModel) => company.name);

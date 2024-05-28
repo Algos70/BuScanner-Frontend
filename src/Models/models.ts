@@ -68,7 +68,6 @@ export interface CompanyModel {
   id: number;
 }
 
-
 export interface ReviewtModel {
   busId: number;
   userName: string;
@@ -81,4 +80,20 @@ export interface ReviewFormModel {
   busId: number;
   rate: number;
   commentText: string;
+}
+
+export interface FollowModel {
+  city1CountryCode: string;
+  city1NameOrPlateCode: string;
+  city2CountryCode: string;
+  city2NameOrPlateCode: string;
+  date: string;
+}
+
+export interface FollowResponseModel {
+  city1Id: number;
+  city1Name: string;
+  city2Id: number;
+  city2Name: string;
+  date: string;
 }

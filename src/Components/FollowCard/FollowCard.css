@@ -1,0 +1,19 @@
+.follow-card-container {
+  width: 100%;
+}
+.follow-card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+}
+
+.follow-from,
+.follow-to,
+.follow-date {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 2rem;
+}

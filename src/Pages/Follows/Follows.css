@@ -22,3 +22,25 @@
   gap: 0.5rem;
   width: 40%;
 }
+
+.follow-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.follow-modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.follow-modal-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
