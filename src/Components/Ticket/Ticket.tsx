@@ -30,7 +30,6 @@ function Ticket(props: TicketProps) {
 
   const handleFavorite = () => {
     try {
-      console.log("Followed");
       //sent a create follow ticket
       notify(
         "Ticket succesfully followed, you can see the details at the follow page.",

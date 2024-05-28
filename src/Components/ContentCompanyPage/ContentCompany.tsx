@@ -57,7 +57,6 @@ function ContentCompany(props: ContentCompanyProps) {
           notify("Error submitting review", "error");
         });
     });
-    console.log("submit review");
   };
 
   const modelChildren = () => {
@@ -92,12 +91,7 @@ function ContentCompany(props: ContentCompanyProps) {
   useEffect(() => {
     getBusCompanyReviews(props.company.id).then((response) => {
       setReviews(response.data);
-      console.log(
-        "canReview",
-        response.data.some(
-          (review: ReviewtModel) => review.userName !== userInfo.userName
-        )
-      );
+
       userInfo.id &&
         setCanReview(
           !response.data.some(
@@ -108,7 +102,6 @@ function ContentCompany(props: ContentCompanyProps) {
         setCompanyRating(response.data);
       });
     });
-    console.log(props.company);
   }, [props.company.id]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleButtonClick = () => {

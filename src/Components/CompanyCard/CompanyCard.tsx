@@ -11,7 +11,6 @@ interface CompanyCardProps {
 
 function CompanyCard({ company }: CompanyCardProps) {
   const companyKey = toCamelCase(company.normalizedName) as keyof typeof BusCompanyIds;
-  console.log(companyKey);
   return (
     <Col md={6} className="mb-4">
       <Link

@@ -15,8 +15,6 @@ function Profile() {
     if (!user.email) {
       notify("You must be logged in to view this page", "error");
       navigate("../login");
-    } else {
-      console.log(userEmail);
     }
   }, []); // eslint-disable-line
 
